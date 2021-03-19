@@ -145,6 +145,7 @@ module.exports = function (req, res, url) {
                 <link href="/pages/css/common_combined.css" rel="stylesheet" type="text/css">
                 <link href="/pages/css/videomaker.css" rel="stylesheet" type="text/css">
                 <link href="/pages/css/upsell_modals.css" rel="stylesheet" type="text/css">
+                <link href="/pages/css/global.css" rel="stylesheet" type="text/css">
 		<style>
 			body {
 				background: #eee;
