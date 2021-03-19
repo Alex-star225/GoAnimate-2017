@@ -143,7 +143,7 @@ module.exports = function (req, res, url) {
 		</script>
 		<link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic" rel="stylesheet" type="text/css">
                 <link href="https://josephcrosmanplays532.github.io/goanimate-2017-files/css/common_combined.css" rel="stylesheet" type="text/css">
-                <link href="https://josephcrosmanplays532.github.io/goanimate-2017-files/css/home.css" rel="stylesheet" type="text/css">
+                <link href="/pages/css/videomaker.css" rel="stylesheet" type="text/css">
                 <link href="https://josephcrosmanplays532.github.io/goanimate-2017-files/css/intlTelInput.css" rel="stylesheet" type="text/css">
                 <link href="https://josephcrosmanplays532.github.io/goanimate-2017-files/css/popup.css" rel="stylesheet" type="text/css">
 		<style>
