@@ -150,45 +150,58 @@ module.exports = function (req, res, url) {
 		</style>
 	</head>
 	
-	<header id="header">
-		<a href="/"><h1 style="margin:0"><img id="logo" src="/pages/img/list_logo.png" alt="Wrapper: Offline"/></h1>
-		<nav id="headbuttons">
-			<a class="button_small" onclick="document.getElementById('file').click()">UPLOAD A MOVIE</a>
-			<div class="dropdown_contain button_small">
-				<div class="dropdown_button">CREATE A CHARACTER</div>
-				<nav class="dropdown_menu">
-					<h2>Comedy World</h2>
-					<a href="/cc?themeId=family&bs=adam">Guy (Adam)</a>
-					<a href="/cc?themeId=family&bs=eve">Girl (Eve)</a>
-					<a href="/cc?themeId=family&bs=bob">Fat (Bob)</a>
-					<a href="/cc?themeId=family&bs=rocky">Buff (Rocky)</a>
-					<hr>
-					<h2>Anime</h2>
-					<a href="/cc?themeId=anime&bs=guy">Guy</a>
-					<a href="/cc?themeId=anime&bs=girl">Girl</a>
-					<a href="/cc?themeId=ninjaanime&bs=guy">Guy (Ninja)</a>
-					<a href="/cc?themeId=ninjaanime&bs=girl">Girl (Ninja)</a>
-					<hr>
-					<h2>Peepz</h2>
-					<a href="/cc?themeId=cc2&bs=default">Lil Peepz</a>
-					<a href="/cc?themeId=chibi&bs=default">Chibi Peepz</a>
-					<a href="/cc?themeId=ninja&bs=default">Chibi Ninjas</a>
-				</nav>
-			</div>
-			<div class="dropdown_contain button_small">
-				<div class="dropdown_button">BROWSE CHARACTERS</div>
-				<nav class="dropdown_menu">
-					<a href="/cc_browser?themeId=family">Comedy World</a>
-					<a href="/cc_browser?themeId=anime">Anime</a>
-					<a href="/cc_browser?themeId=ninjaanime">Ninja Anime</a>
-					<a href="/cc_browser?themeId=cc2">Lil' Peepz</a>
-					<a href="/cc_browser?themeId=chibi">Chibi Peepz</a>
-					<a href="/cc_browser?themeId=ninja">Chibi Ninjas</a>
-				</nav>
-			</div>
-			<a href="/go_full" class="button_big">MAKE A VIDEO</a>
-		</nav>
-	</header>
+	<div class="site-header">
+    <div class="navbar site-nav" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                <a class="navbar-brand" href="http://web.archive.org/web/20170101014613/https://goanimate.com/" title="GoAnimate">
+                    <img alt="Make a Video Online with GoAnimate.com" src="http://web.archive.org/web/20170101014613im_/https://d3v4eglovri8yt.cloudfront.net/static/810c14ccea706e2c/go/img/business_video/home/logo.png">
+                </a>
+            </div>
+
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                
+                <ul class="nav navbar-nav navbar-right">
+<li class="dropdown">
+                    <a class="dropdown-toggle" href="/go_full" data-toggle="dropdown">Your Account <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="list.html">Dashboard</a></li>
+                        <li><a href="list.html">Your Videos</a></li>
+                        <li class="divider"></li>
+                        <li><a href="http://web.archive.org/web/20170101014613/http:/goanimate.com/account">Account Settings</a></li>
+                        <li><a href="http://web.archive.org/web/20170101014613/http:/goanimate.com/profile/00lbzOKBnEro">Your Profile</a></li>
+                        <li class="divider"></li>
+                        <li><a class="logout-link" href="https://ga.vyond.com/logoff">Logout</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                        <a class="dropdown-toggle" href="http://web.archive.org/web/20170101014613/https://goanimate.com/videos" data-toggle="dropdown">Explore <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="http://web.archive.org/web/20170101014613/http://resources.goanimate.com/">Resources</a></li>
+                            <li><a href="http://web.archive.org/web/20170101014613/http://blog.goanimate.com/">Blog</a></li>
+                            <li><a href="http://web.archive.org/web/20170101014613/https://goanimate.com/videos">Featured Videos</a></li>
+                            <li><a href="http://web.archive.org/web/20170101014613/http://blog.goanimate.com/topic/case-studies">Case Studies</a></li>
+                            <li><a href="http://web.archive.org/web/20170101014613/https://support.goanimate.com/">Help Center</a></li>
+                        </ul>
+                    </li>
+                <li>
+			<li class="plans-and-pricing">
+                        <a href="https://www.vyond.com/plans">Plans &amp; Pricing</a>
+                    </li>
+                    <li>
+                    <a class="hidden-sm hidden-md hidden-lg" href="/go_full">Make a Video</a>
+                    <span class="site-nav-btn hidden-xs"><a class="btn btn-orange" href="/go_full">Make a Video</a>
+</span>
+                </li>
+            </ul>
+        </div>
+    </div>
 	
 	<body style="margin:0px" onload="hideHeader()">${toObjectString(attrs, params)
 		}</body>${stuff.pages[url.pathname] || ''}`);
